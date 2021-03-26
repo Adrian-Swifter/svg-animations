@@ -1,0 +1,39 @@
+:root {
+  --primary-color: tomato;
+  --secondary-color: gold;
+}
+
+svg {
+  cursor: pointer;
+}
+
+#tomato {
+  fill: var(--primary-color);
+}
+
+#gold {
+  fill: var(--secondary-color);
+}
+
+#icon-one,
+#icon-two,
+#icon-three {
+  transition: all 1s ease;
+}
+
+#icon-three {
+  transform: translateX(-100%);
+}
+
+svg:hover #icon-two {
+  transform: translateX(20%);
+}
+
+svg:hover #icon-one {
+  transform: translateX(40%);
+  opacity: 0;
+}
+
+svg:hover #icon-three {
+  transform: translateX(20%);
+}
